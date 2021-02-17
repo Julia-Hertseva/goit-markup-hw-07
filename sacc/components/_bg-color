@@ -1,0 +1,15 @@
+.hero,
+footer {
+  background-color: var(--header-bg-color);
+}
+
+.header,
+.advantages,
+.doing,
+.portfolio {
+  background-color: var(--main-bg-color);
+}
+
+.team {
+  background-color: var(--accent-bg-color);
+}

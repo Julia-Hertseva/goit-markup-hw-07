@@ -1,0 +1,117 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-address-item.mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.footer-address-list {
+  width: 231px;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.footer-address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #ffffff;
+}
+
+.footer-mail-link,
+.footer-tel-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 206px;
+  align-items: baseline;
+  margin-right: 93px;
+}
+
+.join,
+.subscription-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--main-bg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--main-bg-color);
+  border-radius: 50%;
+}
+
+.subscription {
+  display: block;
+  min-width: 580px;
+}
+
+.subscription-input {
+  display: inline-flex;
+  align-items: center;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: inherit;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.send-btn {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 60px 10px 30px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.send {
+  position: absolute;
+  top: 25%;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+}
