@@ -5,9 +5,11 @@
   line-height: 1.192;
   color: #000000;
 }
+
 .web {
   color: var(--accent-color);
 }
 
 .studio {
   color: #ffffff;
+}
