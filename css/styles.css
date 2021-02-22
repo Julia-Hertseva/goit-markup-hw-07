@@ -1001,10 +1001,6 @@ footer {
   background-image: url("../images/icon/check.svg");
 }
 
-.modal-form-check-policy:focus + .modal-form-label-policy::before {
-  /* outline: 1px solid var(--accent-color); */
-}
-
 .modal-form-label-policy {
   display: flex;
   align-items: center;

@@ -17,6 +17,7 @@
 }
 
 .hero-title {
+  @extend %margin;
   margin-top: 0;
   margin-bottom: 30px;
   width: 696px;
@@ -27,8 +28,6 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .service-btn {
@@ -44,9 +43,9 @@
   background-color: var(--accent-color);
   color: #ffffff;
   border: none;
-}
 
-.service-btn:hover,
-.service-btn:focus {
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }

@@ -8,9 +8,8 @@
 }
 
 .icon-box {
-  display: flex;
+  @extend %align;
   justify-content: center;
-  align-items: center;
   height: 120px;
   background-color: var(--accent-bg-color);
 }
@@ -22,10 +21,10 @@
 
 .advantages-list-item {
   width: 270px;
-}
 
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-list-name {

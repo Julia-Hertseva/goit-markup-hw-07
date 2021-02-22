@@ -2,10 +2,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container.footer {
-  display: flex;
-  align-items: baseline;
-}
+
 .footer-logo {
   padding: 0;
   margin: 0;
@@ -42,8 +39,7 @@ footer {
 }
 
 .footer-social-links {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %wrap;
   width: 206px;
   align-items: baseline;
   margin-right: 93px;
@@ -57,7 +53,6 @@ footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
-  /* text-align: center; */
   text-transform: uppercase;
 }
 
