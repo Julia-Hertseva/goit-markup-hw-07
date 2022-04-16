@@ -6,9 +6,8 @@
 }
 
 .social-list-link {
-  display: flex;
+  @extend %align;
   justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--main-bg-color);
