@@ -11,7 +11,7 @@
 }
 
 .hero,
-footer {
+.footer {
   background-color: var(--header-bg-color);
 }
 
@@ -91,9 +91,10 @@ ul {
   align-items: center;
 }
 
-.container.footer {
+.container .footer {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logotype {
@@ -538,7 +539,7 @@ ul {
   height: 45px;
 }
 
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
