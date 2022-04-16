@@ -12,6 +12,9 @@
 }
 
 .container .footer {
+  // display: flex;
+  // align-items: baseline;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
 }

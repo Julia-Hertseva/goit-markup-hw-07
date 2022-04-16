@@ -91,7 +91,7 @@ ul {
   align-items: center;
 }
 
-.container .footer {
+.container.footer {
   display: flex;
   align-items: baseline;
 }
