@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container_header">
         <nav class="navigation">
-            <a class="link logotype" href="/"><span class="web">Web</span>Studio</a>
+            <a class="link logotype" href="/"><span class="logotype_web">Web</span>Studio</a>
             <ul class="list navigation-list">
                 <li class="navigation-list__item">
                     <a class="link navigation-list__link current" href="#">Студия</a>
@@ -278,42 +278,42 @@
                 <ul class="list customers-list">
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link link">
-                            <svg class="customer-list-icon  logo-1">
+                            <svg class="customer-list-icon">
                                 <use href="./images/icon/sprite.svg#icon-logo-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link link">
-                            <svg class="customer-list-icon logo-2">
+                            <svg class="customer-list-icon">
                                 <use href="./images/icon/sprite.svg#icon-logo-2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link link">
-                            <svg class="customer-list-icon logo-3">
+                            <svg class="customer-list-icon">
                                 <use href="./images/icon/sprite.svg#icon-logo-3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link link">
-                            <svg class="customer-list-icon logo-4">
+                            <svg class="customer-list-icon">
                                 <use href="./images/icon/sprite.svg#icon-logo-4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link link">
-                            <svg class="customer-list-icon logo-5">
+                            <svg class="customer-list-icon">
                                 <use href="./images/icon/sprite.svg#icon-logo-5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-list-item">
                         <a href="" class="customers-list-link link">
-                            <svg class="customer-list-icon logo-6">
+                            <svg class="customer-list-icon">
                                 <use href="./images/icon/sprite.svg#icon-logo-6"></use>
                             </svg>
                         </a>
@@ -324,10 +324,11 @@
     </main>
 
     <!--Footer-->
-    <footer>
-        <div class="container footer">
-        <div class="footer-address">
-        <a class="link logotype footer-logo" href="/"><span class="web">Web</span><span class="studio">Studio</span></a>
+    <footer class="footer">
+    <div class="container">
+    <div class="footer-section">
+        <div class="footer-section__footer-address">
+        <a class="link logotype footer-logo" href="/"><span class="logotype_web">Web</span><span class="logotype_studio">Studio</span></a>
         <ul class="list footer-address-list">
             <li class="footer-address-item">
                 <a class="link footer-address-link" href="https://goo.gl/maps/tAQsHYisjX12qwub9">г. Киев, пр-т Леси Украинки, 26</a>
@@ -341,7 +342,7 @@
         </ul>
         </div>
         
-        <div class="footer-social-links">
+        <div class="footer-section__footer-social-links">
             <p class="join">присоединяйтесь</p>
             <ul class="list social-list">
                 <li class="social-list-item">
@@ -375,7 +376,7 @@
             </ul>
         </div>
 
-        <div class="subscription">
+        <div class="footer-section__subscription">
             <p class="subscription-title">Подпишитесь на рассылку</p>
             <form action="#" class="subscription-form">
             <input type="email" name="mail" id="mail" placeholder="E-mail" class="subscription-input">
@@ -386,7 +387,7 @@
                 </button>
             </form>
         </div>
-
+    </div>
     </div>
     </footer>
 
@@ -397,7 +398,7 @@
             <form action="#" class="modal-form">
                 <label for="user-name" class="modal-form-input-label">Имя</label>
                 <span class="modal-form-input-wrapper">
-                <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                <input type="text" name="user-name" id="user-name" class="modal-form-input" required>
                     <svg class="modal-form-icon">
                         <use href="./images/icon/sprite.svg#person"></use>
                     </svg>
@@ -405,7 +406,7 @@
 
                 <label for="user-phone" class="modal-form-input-label">Телефон</label>
                 <span class="modal-form-input-wrapper">
-                <input type="tel" name="user-phone" id="user-phone" class="modal-form-input">
+                <input type="tel" name="user-phone" id="user-phone" class="modal-form-input" required>
                 <svg class="modal-form-icon">
                     <use href="./images/icon/sprite.svg#phone"></use>
                 </svg>
@@ -413,7 +414,7 @@
 
                 <label for="user-mail" class="modal-form-input-label">Почта</label>
                 <span class="modal-form-input-wrapper">
-                <input type="email" name="user-mail" id="user-mail" class="modal-form-input">
+                <input type="email" name="user-mail" id="user-mail" class="modal-form-input" required>
                 <svg class="modal-form-icon">
                     <use href="./images/icon/sprite.svg#email"></use>
                 </svg>
@@ -423,7 +424,7 @@
                 <textarea name="user-message" id="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 
                 <input type="checkbox" name="user-policy" id="policy-check" class="modal-form-check-policy visually-hidden">
-                <label for="policy-check" class="modal-form-label-policy">Соглашаюсь с рассылкой и принимаю
+                <label for="policy-check" name="user-policy" class="modal-form-label-policy" required>Соглашаюсь с рассылкой и принимаю
                     <a class="link link-policy" href="#"> Условия договора</a> </label>
             
                 <button type="submit" class="modal-form-btn">Отправить</button>

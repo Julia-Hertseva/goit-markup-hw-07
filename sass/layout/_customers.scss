@@ -50,41 +50,9 @@
 }
 
 .customer-list-icon {
+  fill: var(--link-color);
+  width: 106px;
+  height: 60px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-1 {
-  fill: var(--link-color);
-  width: 44px;
-  height: 49px;
-}
-
-.logo-2 {
-  fill: var(--link-color);
-  width: 40px;
-  height: 52px;
-}
-
-.logo-3 {
-  fill: var(--link-color);
-  width: 41px;
-  height: 43px;
-}
-
-.logo-4 {
-  fill: var(--link-color);
-  width: 80px;
-  height: 42px;
-}
-
-.logo-5 {
-  fill: var(--link-color);
-  width: 59px;
-  height: 47px;
-}
-
-.logo-6 {
-  fill: var(--link-color);
-  width: 88px;
-  height: 45px;
-}

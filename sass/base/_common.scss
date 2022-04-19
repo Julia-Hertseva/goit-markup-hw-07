@@ -24,3 +24,25 @@ img {
   margin: 0;
   list-style-type: none;
 }
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero,
+.footer {
+  background-color: var(--header-bg-color);
+}
+
+.header,
+.advantages,
+.doing,
+.portfolio {
+  background-color: var(--main-bg-color);
+}
+
+.team {
+  background-color: var(--accent-bg-color);
+}
