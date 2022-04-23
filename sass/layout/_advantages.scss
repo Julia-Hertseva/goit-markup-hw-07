@@ -9,6 +9,7 @@
 
 .icon-box {
   @extend %align;
+  margin-bottom: 30px;
   justify-content: center;
   height: 120px;
   background-color: var(--accent-bg-color);
@@ -28,7 +29,6 @@
 }
 
 .advantages-list-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;

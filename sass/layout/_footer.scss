@@ -30,6 +30,12 @@
   font-size: 14px;
   line-height: 1.714;
   color: var(--main-bg-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
 }
 
 .footer-mail-link,
@@ -38,6 +44,12 @@
   font-size: 14px;
   line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
 }
 
 .footer-section__footer-address {
@@ -45,10 +57,9 @@
 }
 
 .footer-section__footer-social-links {
-  @extend %wrap;
-  width: 206px;
+  // @extend %wrap;
+  width: auto;
   align-items: baseline;
-  margin-right: 93px;
 }
 
 .join,
@@ -70,16 +81,19 @@
 
 .footer-section__subscription {
   display: block;
-  min-width: 580px;
+  min-width: 570px;
+  margin-left: 93px;
 }
 
 .subscription-input {
   display: inline-flex;
   align-items: center;
+  height: 50px;
   width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  padding-right: 295px;
   margin-right: 12px;
   background-color: inherit;
   color: var(--main-bg-color);
