@@ -310,8 +310,7 @@ img {
   margin-bottom: 30px;
 }
 
-.cards-img-wrapper,
-.cards-list {
+.cards-img-wrapper {
   position: relative;
   overflow: hidden;
 }

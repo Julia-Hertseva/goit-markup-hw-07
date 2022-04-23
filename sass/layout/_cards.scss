@@ -18,8 +18,7 @@
   }
 }
 
-.cards-img-wrapper,
-.cards-list {
+.cards-img-wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -44,7 +43,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards-list-link{
+.cards-list-link {
   display: block;
 &:hover,
 &:focus {
