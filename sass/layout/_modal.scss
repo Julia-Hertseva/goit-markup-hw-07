@@ -23,20 +23,21 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  padding: 32px 41px 48px 39px;
+  padding: 32px 40px 39px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 4px;  
 }
 
 .message {
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 12px;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -79,20 +80,22 @@
 
 .contact-form-field {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-form-input-label {
   display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
 .modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin-top: 4px;
+  
 }
 
 .modal-form-input {
@@ -150,7 +153,8 @@
 
 .checkbox-wrapper {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
+
 }
 
 .modal-form-label-policy {
@@ -158,20 +162,29 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
-  // text-decoration: var(--accent-color);
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
 
   &::before {
     display: inline-block;
     width: 16px;
     height: 15px;
-    outline: 1px solid var(--title-text-color);
+    border: 1px solid var(--title-text-color);
+    border-radius: 2px;
     content: "";
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 8px;
 
     .modal-form-check-policy:checked + & {
       background-color: var(--accent-color);
       background-image: url("../images/icon/check.svg");
+      background-position: 50% 50%;
+      border: 2px solid var(--accent-color);
+    }
+
+    .modal-form-check-policy:hover + &,
+    .modal-form-check-policy:focus + & {
+      border-color: var(--accent-color);
     }
   }
 }

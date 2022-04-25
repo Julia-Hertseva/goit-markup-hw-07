@@ -196,6 +196,7 @@ img {
 }
 
 .navigation-list__link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -320,6 +321,7 @@ img {
 }
 
 .advantages-list-name {
+  margin: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -507,7 +509,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-section {
+.footer > .container {
   display: flex;
   align-items: baseline;
 }
@@ -517,8 +519,7 @@ img {
   margin: 0;
 }
 
-.footer-address-item.mail {
-  margin-top: 9px;
+.footer-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -583,7 +584,11 @@ img {
 .footer-section__subscription {
   display: block;
   min-width: 570px;
-  margin-left: 93px;
+  margin-left: auto;
+}
+
+.subscription-form {
+  display: flex;
 }
 
 .subscription-input {
@@ -607,11 +612,11 @@ img {
 }
 
 .send-btn {
-  display: inline-block;
-  position: relative;
+  display: flex;
   align-items: center;
-  margin: 0 auto;
-  padding: 10px 60px 10px 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 28px 10px 29px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -624,11 +629,8 @@ img {
 }
 
 .send {
-  position: absolute;
-  top: 25%;
   width: 24px;
   height: 24px;
-  fill: var(--main-bg-color);
   margin-left: 10px;
 }
 
@@ -655,7 +657,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  padding: 32px 41px 48px 39px;
+  padding: 32px 40px 39px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -663,11 +665,12 @@ img {
 
 .message {
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 12px;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -708,20 +711,21 @@ img {
 
 .contact-form-field {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-form-input-label {
   display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
 .modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin-top: 4px;
 }
 
 .modal-form-input {
@@ -778,13 +782,14 @@ img {
 
 .checkbox-wrapper {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .modal-form-label-policy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
@@ -792,14 +797,23 @@ img {
   display: inline-block;
   width: 16px;
   height: 15px;
-  outline: 1px solid var(--title-text-color);
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
   content: "";
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
 }
 
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
   background-color: var(--accent-color);
   background-image: url("../images/icon/check.svg");
+  background-position: 50% 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.modal-form-check-policy:hover + .modal-form-label-policy::before,
+.modal-form-check-policy:focus + .modal-form-label-policy::before {
+  border-color: var(--accent-color);
 }
 
 .link-policy {
