@@ -562,6 +562,7 @@ img {
 .footer-section__footer-social-links {
   width: auto;
   align-items: baseline;
+  margin-right: 93px;
 }
 
 .join,
@@ -584,7 +585,6 @@ img {
 .footer-section__subscription {
   display: block;
   min-width: 570px;
-  margin-left: auto;
 }
 
 .subscription-form {
